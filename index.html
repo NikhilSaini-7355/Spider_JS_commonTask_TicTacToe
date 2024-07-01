@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic-Tac-Toe-Game</title>
+	<script type="text/javascript" src="./scripts.js"></script>
+	<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+	<div class="game-area">
+
+		<div class="game-options">
+			<select name="game_type" id="game_type" onchange="resetAIButton()">
+				<option value="3">3 x 3 Board</option>
+				<option value="4">4 x 4 Board</option>
+				<option value="5">5 x 5 Board</option>
+			</select>
+			<input type="submit" value="Start Game" onclick="generateGame()" class="submit-button"> 
+		</div>
+
+		<div id="game-board" class="game-board">
+			Please select your game from above, then press 'Start Game'.
+		</div>
+		<div class="score-card">
+			Player X Score: <span id="score-X">0</span> <br>
+			Player Y Score: <span id="score-Y">0</span>
+		</div>
+
+	</div>
+
+</body>
+</html>
